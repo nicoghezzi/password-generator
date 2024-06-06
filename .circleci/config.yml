@@ -1,6 +1,6 @@
 version: 2.1
 jobs:
-  build-circleci-first-time:
+  build:
     docker:
       - image: cimg/python:3.12    
     working_directory: ~/password-generator
@@ -12,6 +12,6 @@ jobs:
           name: Run tests
           command: pytest
 workflows:
-  build-circleci-first-time:
+  build:
     jobs:
       - build

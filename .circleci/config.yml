@@ -5,6 +5,7 @@ jobs:
       - image: cimg/python:3.12
     working_directory: ~/password-generator
     steps:
+      #This is a new change - adding a comment to the config file#
       - checkout
       - run:
           name: install dependencies

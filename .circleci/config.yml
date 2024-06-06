@@ -13,5 +13,6 @@ jobs:
                   . venv/bin/activate
                   pip install -r requirements.txt
 workflows:
+  build:
     jobs:
       - build
